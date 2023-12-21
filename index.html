@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="icon"><i class="fa-solid fa-gear"></i></div>
+      <div class="settings-container">
+        <strong>Test Options</strong>
+        <div class="color-box">
+          <h2>Color</h2>
+          <ul class="color-list">
+            <li  color="#21005D"></li>
+            <li color="#072100"></li>
+            <li color="#797A1E"></li>
+            <li color="#D87739"></li>
+            <li color="#125680"></li>
+            <li color="#55624C"></li>
+          </ul>
+        </div>
+        <div class="image-box">
+          <h2>Images</h2>
+          <ul class="images-list">
+            <img class="active" src="images/01.webp" alt="" />
+            <img src="images/02.webp" alt="" />
+            <img src="images/03.webp" alt="" />
+            <img src="images/04.webp" alt="" />
+            <img src="images/05.webp" alt="" />
+          </ul>
+          <div class="buttons">
+            <button class="start active">Start</button>
+            <button class="stop">Stop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+    <!-- Start Landing Page  -->
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <header>
+        <div class="logo">Logo</div>
+        <ul class="links">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Cities</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Plan</a></li>
+        </ul>
+      </header>
+      <div class="intro-text">
+        <h2>Welcome To <span class="active">Libya</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          placeat repellat nobis magnam nemo dolores, magni repellendus corrupti
+          omnis, dolorem voluptatibus.
+        </p>
+      </div>
+    </div>
+    <!-- End Landing Page  -->
+
+    <script src="js/master.js"></script>
+  </body>
 </html>

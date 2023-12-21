@@ -1,0 +1,244 @@
+:root {
+  --main-color: aqua;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Start Settings Box */
+.settings-box {
+  position: fixed;
+  background-color: #fff;
+  width: 200px;
+  left: -200px;
+  top: 0;
+  min-height: 100vh;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.settings-box.open {
+  left: 0;
+}
+
+.settings-box .icon {
+  position: absolute;
+  right: -32px;
+  background-color: #fff;
+  top: 100px;
+  cursor: pointer;
+}
+
+.settings-box .fa-gear {
+  padding: 8px;
+}
+
+.settings-box .settings-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Start color Box */
+.settings-box .settings-container .color-box {
+  padding: 10px;
+  background-color: #eee;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.settings-box .color-box h2 {
+  color: #666;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.settings-box .color-box .color-list {
+  margin: auto;
+  padding: 0;
+}
+
+.settings-box .color-box .color-list li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.settings-box .color-box .color-list li.active {
+  opacity: 1;
+}
+
+.settings-box .color-box .color-list li:not(li:last-child) {
+  margin-bottom: 3px;
+}
+
+.settings-box .color-box .color-list li:first-child {
+  background-color: #21005d;
+}
+.settings-box .color-box .color-list li:nth-child(2) {
+  background-color: #072100;
+}
+.settings-box .color-box .color-list li:nth-child(3) {
+  background-color: #797a1e;
+}
+.settings-box .color-box .color-list li:nth-child(4) {
+  background-color: #d87739;
+}
+.settings-box .color-box .color-list li:nth-child(5) {
+  background-color: #125680;
+}
+.settings-box .color-box .color-list li:nth-child(6) {
+  background-color: #55624c;
+}
+/* End color Box */
+
+/* Start Image Box  */
+.image-box {
+padding: 10px;
+background-color: #eee;
+border-radius: 6px;
+}
+.image-box h2{
+  color: #666;
+  margin: 0;
+}
+
+
+.image-box .images-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0;
+}
+
+.image-box .images-list img {
+  width: 60%;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: .5;
+  transition: .3s;
+}
+
+.image-box .images-list img.active {
+  opacity: 1;
+}
+
+.image-box .buttons .start,
+.image-box .buttons .stop {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: .3s;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: .5;
+}
+
+.image-box .buttons button.active {
+  opacity: 1;
+}
+
+/* End Image Box  */
+
+
+/* End Settings Box */
+
+/* Start Landing Page  */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../images/04.webp);
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.landing-page .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: RGB(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.landing-page header {
+  display: flex;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.active {
+  color: var(--main-color);
+}
+
+.landing-page header .logo {
+  width: 30%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.landing-page header .links {
+  display: flex;
+  flex: 1;
+  display: flex;
+  flex: 1;
+  justify-content: right;
+  gap: 20px;
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.landing-page header .links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.landing-page header .links li a:hover,
+.landing-page header .links li a.active {
+  color: var(--main-color);
+}
+
+.landing-page .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+
+.landing-page .intro-text h2 {
+  font-size: 34px;
+  margin: 0 0 12px 0;
+}
+
+.landing-page .intro-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* End Landing Page  */
