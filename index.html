@@ -23,7 +23,7 @@
         <div class="color-box">
           <h2>Color</h2>
           <ul class="color-list">
-            <li  color="#21005D"></li>
+            <li color="#21005D"></li>
             <li color="#072100"></li>
             <li color="#797A1E"></li>
             <li color="#D87739"></li>
@@ -34,15 +34,17 @@
         <div class="image-box">
           <h2>Images</h2>
           <ul class="images-list">
-            <img class="active" src="images/01.webp" alt="" />
+            <img src="images/01.webp" alt="" />
             <img src="images/02.webp" alt="" />
             <img src="images/03.webp" alt="" />
             <img src="images/04.webp" alt="" />
             <img src="images/05.webp" alt="" />
           </ul>
           <div class="buttons">
-            <button class="start active">Start</button>
-            <button class="stop">Stop</button>
+            <button class="start transparent" data-background="yes">
+              Start
+            </button>
+            <button class="stop" data-background="no">Stop</button>
           </div>
         </div>
       </div>
@@ -51,25 +53,48 @@
     <!-- Start Landing Page  -->
     <div class="landing-page">
       <div class="overlay"></div>
-      <header>
-        <div class="logo">Logo</div>
-        <ul class="links">
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="">Cities</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Plan</a></li>
-        </ul>
-      </header>
-      <div class="intro-text">
-        <h2>Welcome To <span class="active">Libya</span></h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          placeat repellat nobis magnam nemo dolores, magni repellendus corrupti
-          omnis, dolorem voluptatibus.
-        </p>
+      <div class="container">
+        <header>
+          <div class="logo">Logo</div>
+          <ul class="links">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Cities</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Plan</a></li>
+          </ul>
+        </header>
+        <div class="intro-text">
+          <h2>Welcome To <span class="active">Libya</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            placeat repellat nobis magnam nemo dolores, magni repellendus
+            corrupti omnis, dolorem voluptatibus.
+          </p>
+        </div>
       </div>
     </div>
     <!-- End Landing Page  -->
+    <!-- Start About Us  -->
+    <div class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="content">
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloribus consequuntur animi laborum nesciunt maxime dolor
+              consectetur odit ipsam aut a saepe fugit quaerat reprehenderit
+              quas aliquid, quidem sint illum dolores Lorem ipsum dolor sit amet
+          
+            </p>
+          </div>
+          <div class="image">
+            <img src="images/05.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Us  -->
 
     <script src="js/master.js"></script>
   </body>
